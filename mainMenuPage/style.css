@@ -1,0 +1,41 @@
+header{
+    background:#ffffff;
+    padding-top: 15px;
+    min-height: 70px;
+}
+header .title{
+    margin: 20px 0;
+    text-align: center;
+}
+.container {
+  margin-top: 10px;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  }
+body{
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+}
+.ttlPoint{
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  }
+  
+.nav-item {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  }

@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.login-form{
+    width: 300px;
+    margin: auto;;
+    padding: 20px;
+}
+.login-form h2{
+    margin-top: 70px;
+    margin-bottom: 60px;
+    color: #333;
+    text-align: center;
+}
+.form-group{
+    margin-bottom: 15px;
+    text-align: left;
+}
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.form-control:focus {
+    border-color: #0056b3;
+    outline: none;
+}
+.login-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.login-button:hover {
+    background-color: #003d82;
+}
+.forgot-password {
+    margin-top: 14px;
+    text-align: center;
+}
+.forgot-password a {
+    color: #0056b3;
+    text-decoration: none;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+.signup-text{
+    margin-top: 120px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.signup-text span{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+.signup-text a{
+    color: #0056b3;
+    text-decoration: none;
+}
+.signup-text a :hover{
+    text-decoration: underline;
+}

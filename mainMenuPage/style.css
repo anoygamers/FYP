@@ -1,14 +1,15 @@
 header{
-    background:#ffffff;
-    padding-top: 15px;
-    min-height: 70px;
+  background:#ffffff;
+  padding-top: 15px;
+  min-height: 70px;
 }
 header .title{
-    margin: 20px 0;
-    text-align: center;
+  margin: 20px 0;
+  text-align: center;
 }
+
+/*body sight*/
 .container {
-  margin-top: 10px;
   width: 80%;
   margin: auto;
   overflow: hidden;
@@ -19,10 +20,10 @@ body{
   padding: 0;
   background: #f1f1f1;
 }
-.ttlPoint{
+.ttlPoint, .addpoint{
+  margin-top: 20px;
   background: #ffffff;
   padding: 20px;
-  margin-bottom: 20px;
 }
 .bottom-nav {
   position: fixed;

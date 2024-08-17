@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #2a3fb6;
 }
 .container{
     display: flex;
@@ -41,7 +41,7 @@ body{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #0056b3;
+    background-color: #0d006c;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -52,9 +52,10 @@ body{
 .forgot-password {
     margin-top: 14px;
     text-align: center;
+
 }
 .forgot-password a {
-    color: #0056b3;
+    color: #e7edf8;
     text-decoration: none;
 }
 .forgot-password a:hover {
@@ -71,11 +72,12 @@ body{
 .signup-text span{
     display: block;
     margin-bottom: 5px;
-    color: #333;
+    color: #c8cee3;
 }
 .signup-text a{
-    color: #0056b3;
+    color: #ffffff;
     text-decoration: none;
+    
 }
 .signup-text a :hover{
     text-decoration: underline;

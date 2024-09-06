@@ -1,7 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #2a3fb6;
+    background-color: #735BF2;
 }
 .container{
     display: flex;
@@ -12,8 +12,9 @@ body{
 }
 .login-form{
     width: 300px;
-    margin: auto;;
+    margin: auto;
     padding: 20px;
+    align-content: center;
 }
 .login-form h2{
     margin-top: 70px;
@@ -21,16 +22,23 @@ body{
     color: #333;
     text-align: center;
 }
-.form-group{
-    margin-bottom: 15px;
-    text-align: left;
+.logo-NTXG{
+    display: block;
+    margin: 0 auto 50px auto;
+    width: 70%;
+    max-width: 356px;
+    height: auto; 
 }
 .form-control {
+    border-radius: 92px;
+    background: #FFFFFF;
+    position: relative;
+    margin: 0 0 29.7px 0;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box;
+    max-width: 290px;
+    height: 50px;
+    font-size: 20px;
+    text-indent: 30px;
 }
 .form-control:focus {
     border-color: #0056b3;
@@ -38,19 +46,26 @@ body{
 }
 .login-button {
     width: 100%;
-    padding: 10px;
+    padding: 12.3px 0;
     border: none;
-    border-radius: 5px;
-    background-color: #0d006c;
+    border-radius: 92px;
+    background-color: #0D006D;
     color: white;
     cursor: pointer;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0 0 20px 0;
 }
 .login-button:hover {
     background-color: #003d82;
 }
 .forgot-password {
-    margin-top: 14px;
+    font-size: 20px;
+    margin-top: 25px;
     text-align: center;
 
 }
@@ -62,23 +77,31 @@ body{
     text-decoration: underline;
 }
 .signup-text{
-    margin-top: 120px;
+
+    position: absolute;
     bottom: 0;
-    width: 100%;
-    text-align: center;
+    margin: 0px 12.9px 25px 2px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
 }
 .signup-text span{
-    display: block;
-    margin-bottom: 5px;
-    color: #c8cee3;
+    margin: 2px 2px 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 19px;
+    color: #FFFFFF;
 }
 .signup-text a{
-    color: #ffffff;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FFFFFF;
     text-decoration: none;
     
 }
-.signup-text a :hover{
+.signup-text a:hover{
     text-decoration: underline;
 }

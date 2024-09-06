@@ -1,4 +1,4 @@
-*{
+      *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -76,8 +76,6 @@ header .title{
   color: #007BFF;
 }
 .nav-item.logo{
-  flex-grow: 1;
-  display: flex;
   justify-content: center;
   align-items: center;
 }

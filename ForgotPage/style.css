@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #735BF2;
+    background: -moz-linear-gradient(top, #382C76 0%, #4A3B9C 50%, #735BF2 100%);
+    background: -webkit-linear-gradient(top, #382C76 0%, #4A3B9C 50%, #735BF2 100%);
+    background: linear-gradient(to bottom, #382C76 0%, #4A3B9C 50%, #735BF2 100%);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+.white-layout {
+    background: #f1f1f1;
+    width: calc(100% - 25px);
+    height: calc(100% - 70px);
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    position: relative;
+    padding: 20px;
+}
+.back-button {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+.forgot-password {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    font-size: 2em;
+    margin: 0;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.description {
+    /* font-size: 1.2em;
+    color: #555;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center; */
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+    width: calc(100% - 40px); 
+    text-align: left; 
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555;
+}
+.form-control {
+    width: 100%;
+    max-width: 330px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 92px;
+    font-size: 1em;
+    text-indent: 30px;
+    background: #FFFFFF;
+}
+.form-control:focus {
+    border-color: #735BF2;
+    box-shadow: 0 0 5px rgba(115, 91, 242, 0.5);
+    outline: none;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 310px;
+}
+.enter-button {
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+.login-text{
+    font-size: 1em;
+    color: #555;
+    position: absolute;
+    bottom: 0;
+    margin: 0px 12.9px 35px 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.login-text p {
+    margin: 2px 2px 3px 0;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-weight: 400;
+    font-size: 19px;
+    color: #555;
+}
+.login-text a {
+    color: #735BF2;
+    text-decoration: none;
+    overflow-wrap: break-word;
+    font-weight: 700;
+    font-size: 21px;
+}
+.login-link a:hover {
+    text-decoration: underline;
+}

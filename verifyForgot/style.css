@@ -35,7 +35,7 @@ body {
     height: 55px;
     cursor: pointer;
 }
-.forgot-password {
+.verify-user {
     position: absolute;
     top: 120px;
     left: 20px;
@@ -46,7 +46,7 @@ body {
 }
 .description {
     position: absolute;
-    top: 190px;
+    top: 158px;
     left: 20px;
     font-size: 1.2em;
     color: #555;
@@ -58,7 +58,6 @@ body {
     color: #555;
 }
 .form-control {
-    margin-top: 60px;
     width: 100%;
     max-width: 330px;
     padding: 20px;
@@ -69,16 +68,42 @@ body {
     text-indent: 30px;
     background: #FFFFFF;
 }
-.form-control:focus {
-    border-color: #735BF2;
-    box-shadow: 0 0 5px rgba(115, 91, 242, 0.5);
-    outline: none;
+form .input-field {
+    flex-direction: row;
+    column-gap: 10px;
 }
-.button-container {
+.input-field input {
+    height: 70px;
+    width: 65px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    -moz-appearance: textfield;
+    margin: 2px;
+}
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-field input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.button-container{
     display: flex;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
     max-width: 310px;
+    margin-top: 20px;
+}
+.resend-code{
+    font-size: 1em;
+    color: #735BF2;
+    text-decoration: none;
+    font-weight: 700;
 }
 .enter-button {
     width: 55px;

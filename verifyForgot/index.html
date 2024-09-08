@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NTXG | Forgot Password</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="white-layout">
+            <img class="back-button" src="arrow-left-circle-fill.svg" alt="Back">
+            <h1 class="verify-user">Verification</h1>
+            <div class="description">
+                <h4>example@example.com</h4>
+                <h4>We already sent a verification code to your email</h4>
+            </div>
+            <form action="#">
+                <div class="input-field">
+                  <input type="number" maxlength="1" oninput="moveToNext(this, 'input2')" id="input1" />
+                  <input type="number" maxlength="1" oninput="moveToNext(this, 'input3')" id="input2" />
+                  <input type="number" maxlength="1" oninput="moveToNext(this, 'input4')" id="input3" />
+                  <input type="number" maxlength="1" id="input4" />
+                </div>
+              </form>
+            <div class="button-container">
+                <a href="#" class="resend-code">Resend code</a>
+                <img class="enter-button" src="arrow-right-circle-fill.svg" alt="Enter">
+            </div>
+            <div class="login-text">
+                <p>Have an account?</p>
+                    <a href="login.html">Log In</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

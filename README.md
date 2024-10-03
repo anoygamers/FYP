@@ -1,5 +1,3 @@
-Ya, saya faham bagaimana sistem **NTXG KULIAH** ini berfungsi. Berikut adalah ringkasan pemahaman saya mengenai sistem tersebut serta beberapa cadangan untuk melaksanakan fungsi pembuatan QR Code menggunakan JavaScript.
-
 ## **Pemahaman Sistem NTXG KULIAH**
 
 ### **Entiti Utama**

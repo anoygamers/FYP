@@ -273,12 +273,57 @@
         }
         .bottom-nav a:hover {
             background-color: #f1f1f1;
+
+
         }
+
+        :root {
+            --primary-color: #382C76;
+            --secondary-color: #c3c3c3;
+            --background-color: #ffffff;
+            --font-family: "Roboto", sans-serif;
+            --font-size: 32px;
+            --nav-bg-color: #f8f9fa; /* Background color for navbar */
+            --nav-text-color: #000;   /* Text color for navbar buttons */
+}
+
+        .icon {
+            font-size: 24px;
+            margin-right: 20px;
+            text-indent: 30px;
+            }
+
+            .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: var(--nav-bg-color);
+            padding: 10px 0;
+            position: fixed; /* Ensures the navbar stays in place */
+            bottom: 0;      /* Positions it at the bottom of the screen */
+            width: 100%;    /* Makes sure it spans the full width of the viewport */
+            z-index: 9999;  
+            transition: transform 0.3s;
+            }
+
+            .nav-button {
+            background: none;
+            border: none;
+            color: var(--nav-text-color);
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: background-color 0.3s;
+            }
+
     </style>
 </head>
 <body>
+    <footer>
+        <h2>CREADIT BY wanshamirul</h2>
+    </footer>
+
     <header>
-        <h2>Your Calendar & Table</h2>
+        <h2>CALENDAR</h2>
     </header>
 
     <div class="wrapper">
@@ -364,18 +409,13 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-theme-d5">
-        <p>Footer content © 2024</p>
-    </footer>
-
-    <!-- Bottom Navigation Bar for Mobile -->
-    <div class="bottom-nav w3-theme-d2">
-        <a href="#"><i class="fa fa-home"></i><br>Home</a>
-        <a href="#"><i class="fa fa-calendar"></i><br>Calendar</a>
-        <a href="#"><i class="fa fa-table"></i><br>Table</a>
-        <a href="#"><i class="fa fa-user"></i><br>Profile</a>
-    </div>
+    <nav class="navbar">
+        <button class="nav-button" id="calendar" aria-label="Calendar">📅</button>
+        <button class="nav-button" id="history" aria-label="History Menu">⏰</button>
+        <button class="nav-button" id="add-schedule" aria-label="Add Schedule">➕</button>
+        <button class="nav-button" id="notifications" aria-label="Notifications">🔔</button>
+        <button class="nav-button" id="user" aria-label="User">👤</button>
+    </nav>
 
     <script src="script.js" defer></script>
     <script>

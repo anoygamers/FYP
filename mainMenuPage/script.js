@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Example value
-  setGaugeValue(gaugeElement, 0.4); // Set this to the student's score percentage (0.2 means 20%)
+  setGaugeValue(gaugeElement, 0.1); // Set this to the student's score percentage (0.2 means 20%)
 
   window.addEventListener('scroll', () => {
     const mainContainer = document.querySelector('.maincontainer');

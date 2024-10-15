@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     // Update condition text based on the value
     if (value == 0) {
-      conditionElement.textContent = "";
+      conditionElement.textContent = "💀";
     } else if (value >= 0.7) {
       conditionElement.textContent = "Very Good";
       conditionElement.classList.remove("bad");

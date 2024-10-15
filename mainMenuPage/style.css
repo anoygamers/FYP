@@ -33,7 +33,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 15px 20px;
   background-color: var(--background-color);
 }
 
@@ -120,7 +120,8 @@ html, body {
 }
 
 .condition {
-  margin: 40px auto;
+  font-weight: 500;
+  margin: 25px auto;
   text-align: center;
 }
 

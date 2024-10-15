@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #f0f4f7; /* Light background for modern feel */
+    background: #06025c; /* Light background for modern feel */
     color: #333;         /* Text color for better readability */
 }
 
@@ -12,47 +12,38 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #ffffff, #e4ebf1); /* Smooth gradient background */
+    background: linear-gradient(140deg, #024CAA, #000000); /* Smooth gradient background */
     padding-bottom: 60px; /* Ensures the navbar doesn't overlap */
 }
 
-/* Profile card */
 .profile-card {
     position: relative; /* Required for absolute positioning of the edit button */
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 12px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    max-width: 350px;
+    padding: 40px; /* Increased padding to make the profile card larger */
+    max-width: 800px; /* Increased max-width to make the profile card larger */
     width: 100%;
+    height: 130;
     animation: slideIn 1s forwards ease-out;
     opacity: 0;
     transform: translateY(20px);
-    
 }
 
-/* Profile content styles */
-.profile-content {
-    text-align: center;
-}
-
-.profile-title {
-    font-size: 24px;
-    font-weight: bold;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.profile-pic-wrapper {
+/* Profile picture container to center the image */
+.profile-pic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 15px;
 }
 
+/* Profile content styles */
 .profile-pic {
     border-radius: 50%;
     height: 106px;
     width: 106px;
     border: 3px solid #3498db;
-    
     transition: transform 0.3s ease;
 }
 
@@ -60,6 +51,16 @@ body {
     transform: scale(1.15);
 }
 
+/* Profile header */
+.profile-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+/* Divider */
 .profile-divider {
     border: none;
     height: 1px;
@@ -67,6 +68,7 @@ body {
     margin: 15px 0;
 }
 
+/* Profile details */
 .profile-details p {
     font-size: 16px;
     color: #7f8c8d;
@@ -81,7 +83,7 @@ body {
 
 /* Edit button */
 .edit-button {
-    position: absolute;
+    position: fixed; /* Change to fixed to stay at the top right */
     top: 20px;
     right: 20px;
     background-color: transparent;
@@ -187,4 +189,3 @@ form input {
         transform: translateY(0);
     }
 }
-    

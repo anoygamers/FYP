@@ -1,0 +1,190 @@
+/* General body styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f7; /* Light background for modern feel */
+    color: #333;         /* Text color for better readability */
+}
+
+/* Profile section */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #e4ebf1); /* Smooth gradient background */
+    padding-bottom: 60px; /* Ensures the navbar doesn't overlap */
+}
+
+/* Profile card */
+.profile-card {
+    position: relative; /* Required for absolute positioning of the edit button */
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 350px;
+    width: 100%;
+    animation: slideIn 1s forwards ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+    
+}
+
+/* Profile content styles */
+.profile-content {
+    text-align: center;
+}
+
+.profile-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.profile-pic-wrapper {
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 106px;
+    width: 106px;
+    border: 3px solid #3498db;
+    
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.15);
+}
+
+.profile-divider {
+    border: none;
+    height: 1px;
+    background-color: #eaeaea;
+    margin: 15px 0;
+}
+
+.profile-details p {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.profile-details i {
+    color: #2980b9;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+/* Edit button */
+.edit-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    color: #3498db;
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.edit-button:hover {
+    color: #2980b9;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 500px; /* Maximum width */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Navbar remains the same */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #fdfdfd;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: transform 0.3s;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #3498db;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+    color: #2980b9;
+}
+
+/* Animation for profile card appearance */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    

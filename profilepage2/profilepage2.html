@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profilepage2Style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Profile Page</title>
+</head>
+<body>
+    <div class="profile-section">
+        <div class="profile-card">
+            <button class="edit-button" id="editProfile">✏️ Edit</button>
+            <div class="profile-pic-container">
+                <img src="pfp1.jpg" class="profile-pic" alt="Avatar">
+            </div>
+            <div class="profile-header">
+                <h2>WAN SHAMIRUL</h2>
+            </div>
+            <div class="profile-details">
+                <p><i class="fa fa-user"></i> Wan Shamirul</p>
+                <p><i class="fa fa-birthday-cake"></i> 16/08/2004</p>
+                <p><i class="fa fa-phone"></i> 60-11 4443 0021</p>
+                <p><i class="fa fa-envelope"></i> wanshamirul@hotmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <button class="nav-button" id="calendar" aria-label="Calendar">📅</button>
+        <button class="nav-button" id="history" aria-label="History Menu">⏰</button>
+        <button class="nav-button" id="add-schedule" aria-label="Add Schedule">➕</button>
+        <button class="nav-button" id="notifications" aria-label="Notifications">🔔</button>
+        <button class="nav-button" id="user" aria-label="User">👤</button>
+    </nav>
+
+   <!-- Modal for Editing Profile -->
+<div class="modal" id="editModal">
+    <div class="modal-content">
+        <span class="close-button" id="closeModal">&times;</span>
+        <h2>Edit Profile</h2>
+        <form id="editForm">
+            <label for="profile-pic">Profile Picture:</label>
+            <input type="file" id="profile-pic" accept="image/*">
+            <label for="name">Name:</label>
+            <input type="text" id="name" value="Wan Shamirul" required>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" value="2004-08-16" required>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" value="60-11 4443 0021" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="wanshamirul@hotmail.com" required>
+            <button type="submit">Save Changes</button>
+        </form>
+    </div>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

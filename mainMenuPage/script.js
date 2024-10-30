@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.getElementById('notifications').addEventListener('click', function() {
-    window.location.href = '/#/index.html';
+    window.location.href = '/notificationPage/notification.html';
   });
 
   document.getElementById('user').addEventListener('click', function() {

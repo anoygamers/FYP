@@ -30,4 +30,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Initial fetch
     fetchNotifications();
+
+    document.getElementById('calendar').addEventListener('click', function() {
+    window.location.href = '/SchedulePage/index.html';
+    });
+
+    document.getElementById('history').addEventListener('click', function() {
+    window.location.href = '/mainMenuPage/index.html';
+    });
+
+    document.getElementById('add-schedule').addEventListener('click', function() {
+    window.location.href = '/#/index.html';
+    });
+
+    document.getElementById('notifications').addEventListener('click', function() {
+    window.location.href = '/notificationPage/notification.html';
+    });
+
+    document.getElementById('user').addEventListener('click', function() {
+    window.location.href = '/profilePage/index.html';
+    });
 });

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #reader {
+            width: 300px;
+            height: 300px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>QR Code Scanner</h1>
+    <div id="reader"></div>
+    <p id="result">Scan a QR code to see the result here...</p>
+
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script>
+        // Memulakan QR scanner
+        function startQRScanner() {
+            var resultContainer = document.getElementById('result');
+
+            function onScanSuccess(decodedText, decodedResult) {
+                // Apabila QR code berjaya diimbas
+                resultContainer.innerHTML = `Scanned result: ${decodedText}`;
+            }
+
+            function onScanFailure(error) {
+                // Bila imbasan gagal (optional)
+                console.warn(`Code scan error = ${error}`);
+            }
+
+            // Membuat instance HTML5 QR Code Scanner
+            let html5QrcodeScanner = new Html5QrcodeScanner(
+                "reader", { fps: 10, qrbox: 250 });
+
+            // Mulakan imbasan QR
+            html5QrcodeScanner.render(onScanSuccess, onScanFailure);
+        }
+
+        // Mula imbasan apabila page dibuka
+        startQRScanner();
+    </script>
+
+</body>
+</html>

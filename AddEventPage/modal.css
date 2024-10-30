@@ -1,0 +1,174 @@
+/* Modal Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 95%; /* Pastikan modal menggunakan lebar hampir penuh skrin */
+    }
+    input[type="text"], textarea {
+        font-size: 14px; /* Kecilkan sedikit font untuk skrin kecil */
+    }
+}
+
+/* Style untuk butang Add Event */
+#openModalBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style untuk modal yang tersembunyi di bawah skrin */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Separa lut sinar */
+    backdrop-filter: blur(5px); /* Blur latar belakang */
+}
+
+.header-form {
+    display: flex; /* Gunakan flexbox */
+    align-items: center; /* Pusatkan secara vertikal */
+    position: relative; /* Untuk membolehkan elemen bertindih */
+    padding: 10px; /* Tambah padding jika perlu */
+}
+
+.event-title {
+    margin: 0; /* Tiada margin untuk h2 */
+    z-index: 1; /* Pastikan teks berada di atas */
+    cursor: pointer;
+}
+
+.qr {
+    height: 45px; /* Tinggi untuk logo QR code */
+    margin-left: auto; /* Menggunakan margin-left auto untuk pos di kanan */
+    margin-bottom: 5px;
+    z-index: 0; /* Pastikan logo berada di bawah teks */
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: white;
+    position: fixed !important;
+    bottom: -100%; /* Pada mulanya tersembunyi di bawah */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 87%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 15px;
+    transition: bottom 0.5s ease; /* Transition untuk naik ke atas */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column; /* Label di atas input */
+    align-items: flex-start;
+}
+
+/* Untuk input masa */
+.form-row {
+    display: flex;
+    gap: 20px; /* Jarak antara dua form group */
+    justify-content: center;
+}
+
+/* Set label dan input dalam satu lajur */
+.form-group label {
+    margin-bottom: 5px; /* Jarak antara label dan input */
+}
+
+/* Input dan elemen */
+input[type="text"], input[type="date"], input[type="time"], textarea {
+    width: 100%; /* Lebar penuh untuk skrin kecil */
+    padding: 10px;
+    font-size: 16px;
+    box-sizing: border-box; /* Pastikan padding dikira dalam lebar */
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Garis tepi untuk input */
+    border-radius: 4px;
+}
+
+input[type="time"] {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.modal.show .modal-content {
+    bottom: 0; /* Modal naik ke atas apabila class 'show' ditambah */
+}
+
+/* Styling untuk remind me dan clear all section */
+.remind-me-section {
+    display: flex;
+    margin-top: 20px; /* Jarak atas */
+}
+
+/* Styling untuk pilihan kategori */
+.category-selection {
+    display: flex;
+    justify-content: space-around; /* Sebarkan kotak secara sama rata */
+    margin: 13px 0;
+}
+
+.custom-checkbox {
+    padding: 10px; /* Padding di dalam kotak */
+    text-align: center; /* Teks di tengah */
+    border: 2px solid #735BF2; /* Garis tepi */
+    border-radius: 10px; /* Sudut bulat */
+    cursor: pointer; /* Tukar cursor ke pointer untuk menunjukkan boleh diklik */
+    transition: background-color 0.3s, color 0.3s; /* Transition untuk animasi */
+    margin: 0 10px;
+    flex: 1;
+    width: 105px;
+}
+
+.custom-checkbox.selected {
+    background-color: #735BF2; /* Warna latar belakang ketika dipilih */
+    color: white; /* Teks berwarna putih ketika dipilih */
+}
+
+
+.category-selection span {
+    margin-left: 8px; /* Jarak antara radio button dan label */
+}
+
+.category-selection input[type="radio"]:checked + span {
+    background-color: #735BF2; /* Warna latar belakang bila dipilih */
+}
+
+/* Style untuk butang Submit */
+button[type="submit"] {
+    background-color: #735BF2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 30px auto 0; /* Top margin of 30px and auto margin on sides to center */
+    width: 90%; /* Ensure the button has 90% of the parent width */
+    display: block; /* Ensure it takes the full width as a block element */
+}
+
+/* Styling untuk teks 'Clear all' */
+.clear-all {
+    color: red; /* Warna merah untuk menonjolkan teks 'Clear all' */
+    cursor: pointer; /* Tukar cursor ke pointer supaya ia kelihatan boleh diklik */
+    font-weight: bold; /* Bold teks untuk lebih ketara */
+    margin-top: 10px;
+}
